@@ -1,0 +1,55 @@
+{
+  "name": "central-bank-of-barbados-exchange-rate",
+  "version": "1.2.7",
+  "description": "Official Central Bank of Barbados (Barbados) daily exchange rates — 7 currencies vs BBD, history since 2010. Zero-dependency Node.js/TypeScript client.",
+  "keywords": [
+    "cbbd",
+    "central",
+    "bank",
+    "of",
+    "barbados",
+    "exchange-rate",
+    "exchange-rates",
+    "currency",
+    "forex",
+    "fx",
+    "bbd",
+    "central-bank",
+    "official-rates",
+    "barbados",
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://allratestoday.com/central-bank-rates-api/cbbd/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllRates-Today/central-bank-of-barbados-exchange-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AllRates-Today/central-bank-of-barbados-exchange-rate/issues"
+  },
+  "license": "MIT",
+  "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
