@@ -1,6 +1,6 @@
 {
   "name": "central-bank-of-barbados-exchange-rate",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Official Central Bank of Barbados (Barbados) daily exchange rates — 7 currencies vs BBD, history since 2010. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "cbbd",
