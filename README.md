@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/central-bank-of-barbados-exchange-rate.svg)](https://github.com/AllRates-Today/central-bank-of-barbados-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/central-bank-of-barbados-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![USD/BBD today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fcbbd%3Fsource%3DUSD%26target%3DBBD&query=%24.rate&label=USD%2FBBD%20published%20by%20Central%20Bank%20of%20Barbados&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/cbbd/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fcbbd%3Fsource%3DUSD%26target%3DBBD&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/cbbd/)
 
 **Official Central Bank of Barbados (Barbados) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Central Bank of Barbados itself prints, every business day.**
 
@@ -32,6 +34,33 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Central Bank of Barbados table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-08** by Central Bank of Barbados — 14 rates. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| BZD | BBD | buy | 0.99688 |
+| BZD | BBD | sell | 1.00313 |
+| CAD | BBD | buy | 1.39244 |
+| CAD | BBD | sell | 1.42425 |
+| EUR | BBD | buy | 2.2256 |
+| EUR | BBD | sell | 2.27159 |
+| GBP | BBD | buy | 2.62678 |
+| GBP | BBD | sell | 2.68106 |
+| GYD | BBD | buy | 0.00956 |
+| GYD | BBD | sell | 0.00962 |
+| USD | BBD | buy | 1.99 |
+| USD | BBD | sell | 2.02768 |
+| XCD | BBD | buy | 0.73843 |
+| XCD | BBD | sell | 0.74306 |
+
+Source: [Official rates published by CBBD, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbbd/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
