@@ -114,7 +114,7 @@ const pair = await getRate('USD', 'BBD', { apiKey: 'art_live_...' });
 {
   bank: 'cbbd',
   name: 'Central Bank of Barbados',
-  rate_date: '2026-10-08',   // Central Bank of Barbados's own publication date
+  rate_date: '2026-10-12',   // Central Bank of Barbados's own publication date
   source: 'USD',
   target: 'BBD',
   rate: 2.02768,
@@ -142,7 +142,7 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'cbbd',
   name: 'Central Bank of Barbados',
-  rate_date: '2026-10-08',
+  rate_date: '2026-10-12',
   rates: [
     { "base": "USD", "quote": "BBD", "type": "sell", "value": 2.02768 },
     { "base": "USD", "quote": "BBD", "type": "buy", "value": 1.99 },
@@ -185,7 +185,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'central-bank-of-barbados-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'BBD', from: '2026-01-01', to: '2026-10-08' },
+  { source: 'USD', target: 'BBD', from: '2026-01-01', to: '2026-10-12' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -198,11 +198,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'BBD',
   from: '2026-01-01',
-  to: '2026-10-08',
+  to: '2026-10-12',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-08', rate: 2.02768, rate_type: 'sell', derived: false, method: 'published' },
+    { date: '2026-10-12', rate: 2.02768, rate_type: 'sell', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -252,6 +252,7 @@ curl "https://allratestoday.com/api/v1/central-bank/cbbd/latest?format=xml&api_k
 - MCP server: `npx -y @allratestoday/central-bank-mcp` (stdio) or the hosted endpoint `https://allratestoday.com/api/mcp` — tools for official rates, history, cross-bank comparison and publication calendars
 - Already using the general SDK or MCP server? Since 2026-10-01 [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk) 1.4+ has `officialRates('cbbd')` and [`@allratestoday/mcp-server`](https://www.npmjs.com/package/@allratestoday/mcp-server) 0.6+ has a `get_official_rates` tool — both return this source's latest table with no key, so you can add it without a second dependency
 - Claude Code plugin (no key): `/plugin marketplace add AllRates-Today/claude-code-plugin` then `/plugin install allratestoday@allratestoday` — bundles both MCP servers plus an `/official-rate cbbd ...` command
+- Need dated tables or history for an evaluation? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days; the MCP servers expose it as `request_trial_key`
 - Machine-readable site guide: [llms.txt](https://allratestoday.com/llms.txt) · [for-ai-agents](https://allratestoday.com/for-ai-agents/)
 
 ## ⚖️ Published vs derived rates
