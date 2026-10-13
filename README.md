@@ -42,18 +42,18 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-12** by Central Bank of Barbados — 14 rates. Updated 2026-10-12.
+Published **2026-10-13** by Central Bank of Barbados — 14 rates. Updated 2026-10-13.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
 | BZD | BBD | buy | 0.99688 |
 | BZD | BBD | sell | 1.00313 |
-| CAD | BBD | buy | 1.39186 |
-| CAD | BBD | sell | 1.42367 |
-| EUR | BBD | buy | 2.2267 |
-| EUR | BBD | sell | 2.27271 |
-| GBP | BBD | buy | 2.63195 |
-| GBP | BBD | sell | 2.68634 |
+| CAD | BBD | buy | 1.38942 |
+| CAD | BBD | sell | 1.42117 |
+| EUR | BBD | buy | 2.21716 |
+| EUR | BBD | sell | 2.26297 |
+| GBP | BBD | buy | 2.62439 |
+| GBP | BBD | sell | 2.67863 |
 | GYD | BBD | buy | 0.00953 |
 | GYD | BBD | sell | 0.00959 |
 | USD | BBD | buy | 1.99 |
