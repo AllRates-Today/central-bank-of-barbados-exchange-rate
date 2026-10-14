@@ -116,7 +116,7 @@ const pair = await getRate('USD', 'BBD', { apiKey: 'art_live_...' });
 {
   bank: 'cbbd',
   name: 'Central Bank of Barbados',
-  rate_date: '2026-10-12',   // Central Bank of Barbados's own publication date
+  rate_date: '2026-10-14',   // Central Bank of Barbados's own publication date
   source: 'USD',
   target: 'BBD',
   rate: 2.02768,
@@ -144,7 +144,7 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'cbbd',
   name: 'Central Bank of Barbados',
-  rate_date: '2026-10-12',
+  rate_date: '2026-10-14',
   rates: [
     { "base": "USD", "quote": "BBD", "type": "sell", "value": 2.02768 },
     { "base": "USD", "quote": "BBD", "type": "buy", "value": 1.99 },
@@ -187,7 +187,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'central-bank-of-barbados-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'BBD', from: '2026-01-01', to: '2026-10-12' },
+  { source: 'USD', target: 'BBD', from: '2026-01-01', to: '2026-10-14' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -200,11 +200,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'BBD',
   from: '2026-01-01',
-  to: '2026-10-12',
+  to: '2026-10-14',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-12', rate: 2.02768, rate_type: 'sell', derived: false, method: 'published' },
+    { date: '2026-10-14', rate: 2.02768, rate_type: 'sell', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -323,9 +323,9 @@ getRate('USD', 'BBD', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 
 Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
 
-- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/cbbd.csv`)
+- Hugging Face: [AllRatesToday/central-bank-exchange-rates](https://huggingface.co/datasets/AllRatesToday/central-bank-exchange-rates) — one CSV per institution (`rates/cbbd.csv`)
 - Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
-- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/cbbd/latest.json`
+- Raw JSON on GitHub: `https://raw.githubusercontent.com/AllRates-Today/central-bank-exchange-rates/main/data/cbbd/latest.json`
 
 ## 🔗 Links
 
