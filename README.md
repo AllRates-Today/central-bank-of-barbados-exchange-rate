@@ -20,6 +20,10 @@
 
 > **Official rate, not mid-market:** every value here is a number Central Bank of Barbados itself published, fixed once printed and carrying the central bank's own `rate_date` — what filings and audits require. Need the live mid-market rate for pricing or display instead? Use the [mid-market API](https://allratestoday.com/docs/) or [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk). The two can diverge by several percent.
 
+## 🔑 Get your API key
+
+Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
+
 ## ⚡ Try it without a key
 
 The latest Central Bank of Barbados table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
@@ -43,20 +47,20 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-19 by Central Bank of Barbados — 14 rates. Updated 2026-10-19.</summary>
+<summary>Table as text: published 2026-10-20 by Central Bank of Barbados — 14 rates. Updated 2026-10-20.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
 | BZD | BBD | buy | 0.99688 |
 | BZD | BBD | sell | 1.00313 |
-| CAD | BBD | buy | 1.40328 |
-| CAD | BBD | sell | 1.43534 |
-| EUR | BBD | buy | 2.23325 |
-| EUR | BBD | sell | 2.2794 |
-| GBP | BBD | buy | 2.64864 |
-| GBP | BBD | sell | 2.70338 |
-| GYD | BBD | buy | 0.00953 |
-| GYD | BBD | sell | 0.00959 |
+| CAD | BBD | buy | 1.40701 |
+| CAD | BBD | sell | 1.43916 |
+| EUR | BBD | buy | 2.22858 |
+| EUR | BBD | sell | 2.27464 |
+| GBP | BBD | buy | 2.64457 |
+| GBP | BBD | sell | 2.69922 |
+| GYD | BBD | buy | 0.00954 |
+| GYD | BBD | sell | 0.0096 |
 | USD | BBD | buy | 1.99 |
 | USD | BBD | sell | 2.02768 |
 | XCD | BBD | buy | 0.73843 |
@@ -66,10 +70,6 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 Source: [Official rates published by CBBD, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/cbbd/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
-
-## 🔑 Get your API key
-
-Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
 ## 📦 Installation
 
