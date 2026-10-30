@@ -32,18 +32,18 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-29 by Central Bank of Barbados — 14 rates. Updated 2026-10-30.</summary>
+<summary>Table as text: published 2026-10-30 by Central Bank of Barbados — 14 rates. Updated 2026-10-30.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
 | BZD | BBD | buy | 0.99688 |
 | BZD | BBD | sell | 1.00313 |
-| CAD | BBD | buy | 1.41709 |
-| CAD | BBD | sell | 1.44947 |
+| CAD | BBD | buy | 1.41912 |
+| CAD | BBD | sell | 1.45154 |
 | EUR | BBD | buy | 2.21855 |
 | EUR | BBD | sell | 2.26439 |
-| GBP | BBD | buy | 2.64924 |
-| GBP | BBD | sell | 2.70398 |
+| GBP | BBD | buy | 2.6556 |
+| GBP | BBD | sell | 2.71048 |
 | GYD | BBD | buy | 0.00954 |
 | GYD | BBD | sell | 0.0096 |
 | USD | BBD | buy | 1.99 |
